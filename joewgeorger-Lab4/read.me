@@ -1,0 +1,10 @@
+Creative Portion:
+1. My favorite button allowed users to add and remove from favorites. I did this by having 2 states for the button. One for when the movie isn't a favorite and one when it is. I changed the properties of the button to make this clear to the user. The color and text of the button was different based on the state. I also had to create methods to change state when pressed, on load, and on appear. Making sure the button was always in the right state.
+
+2. I created a view controller that was pushed on the stack from the favorites tab. This allows users to see a detail view of one of their favorite movies. This was done by pushing data to the new detail view and using that data to make new api calls, because only the title and id were kept in my favorite storage. The new data then was assigned to text and image fields. 
+
+3. I used 3D Touch to allow users to press on cells in the collection view and get a menu. In the menu, users can favorite the movie or go the the movies page on tmdb, if it exists. This was done using the UICollectionViewDelegate. There I created to actions and puts them in the context menu.
+
+4. I used 3D Touch to allow users to get a better view of the movie overview in the detailView(vc3). This was done using the UIContextMenuInteractionDelegate. Using that, I was able to make a action that would take could take the user to the movie's tmdbs webpage, if it exists, and also see the overview text better.
+
+5. In the credit tab, I used a button to allow the user to go to the tmdb homepage. I think this gives more credit to tmdb, while simultaneously allowing the user to explore the site. I this this using the button's action to redirect using a url to safari.
